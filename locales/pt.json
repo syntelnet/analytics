@@ -72,12 +72,36 @@
         ],
         "footer": "Mais do que um script, este projeto é uma fundação de observabilidade frontend, preparada para crescer junto com seus produtos."
     },
+    "nav": {
+        "problem": "O Problema",
+        "solution": "A Solução",
+        "cases": "Casos de Uso",
+        "relevance": "Relevância",
+        "setup": "Como Usar",
+        "config": "Configuração",
+        "api": "API de Tracking",
+        "security": "Segurança"
+    },
     "setup": {
-        "title": "Como Usar",
+        "title": "Configuração Inicial",
+        "description": "Integrar o Centralized Web Analytics é um processo de poucos segundos. Escolha sua plataforma abaixo para ver os detalhes.",
         "tabs": {
             "html": "HTML Puro",
             "nextjs": "Next.js",
             "react": "React / Vite"
+        }
+    },
+    "configuration": {
+        "title": "Atributos Disponíveis",
+        "description": "Você pode customizar o comportamento do script diretamente na tag <code>&lt;script&gt;</code> usando atributos <code>data-*</code>.",
+        "table": {
+            "attr": "Atributo",
+            "req": "Obrigatório",
+            "desc": "Descrição",
+            "values": "Valores",
+            "id_desc": "O Measurement ID do seu GA4 (ex: G-XXXX)",
+            "env_desc": "Define o ambiente atual para segmentação de dados.",
+            "debug_desc": "Ativa logs detalhados no console e o DebugView do GA4."
         }
     },
     "api": {
@@ -88,6 +112,6 @@
         "title": "Segurança e CSP"
     },
     "footer": {
-        "copy": "&copy; 2026 Centralized Web Analytics. Licença MIT."
+        "copy": "&copy; 2026 Syntel Analytics. Licença MIT."
     }
 }
