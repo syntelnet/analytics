@@ -28,6 +28,9 @@
     <!-- Flag Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" />
 
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
     <style>
         :root {
             --primary: #6366f1;
@@ -135,6 +138,19 @@
 
         .dropdown .fi {
             font-size: 1.1rem;
+        }
+
+        .icon-sm {
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
+        }
+
+        .icon-md {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 8px;
         }
 
         .dropdown-toggle::after {
@@ -515,20 +531,20 @@
         <div class="layout">
             <aside>
                 <nav class="sidebar-nav">
-                    <a href="#problem" class="sidebar-link active" data-i18n="nav.problem"></a>
-                    <a href="#solution" class="sidebar-link" data-i18n="nav.solution"></a>
-                    <a href="#use_cases" class="sidebar-link" data-i18n="nav.cases"></a>
-                    <a href="#relevance" class="sidebar-link" data-i18n="nav.relevance"></a>
-                    <a href="#setup" class="sidebar-link" data-i18n="nav.setup"></a>
-                    <a href="#config" class="sidebar-link" data-i18n="nav.config"></a>
-                    <a href="#api" class="sidebar-link" data-i18n="nav.api"></a>
-                    <a href="#security" class="sidebar-link" data-i18n="nav.security"></a>
+                    <a href="#problem" class="sidebar-link active"><i data-lucide="alert-circle" class="icon-sm"></i> <span data-i18n="nav.problem"></span></a>
+                    <a href="#solution" class="sidebar-link"><i data-lucide="check-circle" class="icon-sm"></i> <span data-i18n="nav.solution"></span></a>
+                    <a href="#use_cases" class="sidebar-link"><i data-lucide="briefcase" class="icon-sm"></i> <span data-i18n="nav.cases"></span></a>
+                    <a href="#relevance" class="sidebar-link"><i data-lucide="zap" class="icon-sm"></i> <span data-i18n="nav.relevance"></span></a>
+                    <a href="#how-to-use" class="sidebar-link"><i data-lucide="play-circle" class="icon-sm"></i> <span data-i18n="nav.setup"></span></a>
+                    <a href="#config" class="sidebar-link"><i data-lucide="settings" class="icon-sm"></i> <span data-i18n="nav.config"></span></a>
+                    <a href="#api" class="sidebar-link"><i data-lucide="code" class="icon-sm"></i> <span data-i18n="nav.api"></span></a>
+                    <a href="#security" class="sidebar-link"><i data-lucide="shield" class="icon-sm"></i> <span data-i18n="nav.security"></span></a>
                 </nav>
             </aside>
 
             <main class="main-content">
                 <section id="problem">
-                    <h2 data-i18n="problem.title"></h2>
+                    <h2><i data-lucide="alert-triangle" class="icon-md"></i> <span data-i18n="problem.title"></span></h2>
                     <p style="margin-bottom: 2rem" data-i18n="problem.description"></p>
                     <div class="grid-2">
                         <div class="card">
@@ -543,7 +559,7 @@
                 </section>
 
                 <section id="solution">
-                    <h2 data-i18n="solution.title"></h2>
+                    <h2><i data-lucide="check-circle" class="icon-md"></i> <span data-i18n="solution.title"></span></h2>
                     <p style="margin-bottom: 2rem" data-i18n="solution.description"></p>
                     <div class="card">
                         <h3 data-i18n="solution.steps_header"></h3>
@@ -553,7 +569,7 @@
                 </section>
 
                 <section id="use_cases">
-                    <h2 data-i18n="use_cases.title"></h2>
+                    <h2><i data-lucide="briefcase" class="icon-md"></i> <span data-i18n="use_cases.title"></span></h2>
                     <div class="grid-2">
                         <div class="card">
                             <h3 data-i18n="use_cases.scenarios_header"></h3>
@@ -568,7 +584,7 @@
                 </section>
 
                 <section id="relevance">
-                    <h2 data-i18n="relevance.title"></h2>
+                    <h2><i data-lucide="zap" class="icon-md"></i> <span data-i18n="relevance.title"></span></h2>
                     <p style="margin-bottom: 2rem" data-i18n="relevance.description"></p>
                     <div class="card">
                         <h3 data-i18n="relevance.benefits_header"></h3>
@@ -577,7 +593,7 @@
                 </section>
 
                 <section id="setup">
-                    <h2 data-i18n="setup.title"></h2>
+                    <h2><i data-lucide="play-circle" class="icon-md"></i> <span data-i18n="setup.title"></span></h2>
                     <p style="margin-bottom: 1.5rem" data-i18n="setup.description"></p>
                     <div class="tabs">
                         <button class="tab-btn active" onclick="showTab('html')" data-i18n="setup.tabs.html"></button>
@@ -628,7 +644,7 @@ export default function RootLayout({ children }) {
                 </section>
 
                 <section id="config">
-                    <h2 data-i18n="configuration.title"></h2>
+                    <h2><i data-lucide="settings" class="icon-md"></i> <span data-i18n="configuration.title"></span></h2>
                     <p data-i18n="configuration.description"></p>
                     <table>
                         <thead>
@@ -663,7 +679,7 @@ export default function RootLayout({ children }) {
                 </section>
 
                 <section id="api">
-                    <h2 data-i18n="api.title"></h2>
+                    <h2><i data-lucide="code" class="icon-md"></i> <span data-i18n="api.title"></span></h2>
                     <p style="margin-bottom: 1.5rem" data-i18n="api.description"></p>
                     <div class="code-header"><span>javascript</span><button class="copy-btn" onclick="copyCode('code-api')">Copy</button></div>
                     <pre id="code-api" class="language-javascript"><code>window.track('event_name', { key: 'value' });</code></pre>
@@ -674,7 +690,7 @@ export default function RootLayout({ children }) {
                 </section>
 
                 <section id="security">
-                    <h2 data-i18n="security.title"></h2>
+                    <h2><i data-lucide="lock" class="icon-md"></i> <span data-i18n="security.title"></span></h2>
                     <div class="code-header"><span>CSP Policy</span></div>
                     <pre class="language-http"><code>script-src 'self' https://www.googletagmanager.com;
 connect-src https://www.google-analytics.com https://stats.g.doubleclick.net;</code></pre>
@@ -683,7 +699,7 @@ connect-src https://www.google-analytics.com https://stats.g.doubleclick.net;</c
         </div>
 
         <footer>
-            <p><a href="https://syntel.net.br" target="_blank" rel="noopener">syntel.net.br</a></p>
+            <p><a href="https://syntel.net.br" target="_blank" rel="noopener"><i data-lucide="external-link" class="icon-sm"></i> syntel.net.br</a></p>
             <p data-i18n="footer.copy"></p>
         </footer>
     </div>
@@ -839,6 +855,9 @@ connect-src https://www.google-analytics.com https://stats.g.doubleclick.net;</c
             setTimeout(() => status.style.opacity = '0', 3000)
             console.log('Demo event tracked')
         }
+
+        // Initialize Lucide Icons
+        lucide.createIcons();
     </script>
 </body>
 
