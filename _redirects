@@ -1,15 +1,13 @@
-# i18n Routing for Cloudflare Pages
-/pt/* /index.html 200
-/en/* /index.html 200
-/es/* /index.html 200
-/fr/* /index.html 200
-/de/* /index.html 200
-/it/* /index.html 200
+/pt/* / 200
+/en/* / 200
+/es/* / 200
+/fr/* / 200
+/de/* / 200
+/it/* / 200
 
-# Canonical URLs for the root of each language
-/pt /index.html 200
-/en /index.html 200
-/es /index.html 200
-/fr /index.html 200
-/de /index.html 200
-/it /index.html 200
+/pt /pt/ 301
+/en /en/ 301
+/es /es/ 301
+/fr /fr/ 301
+/de /de/ 301
+/it /it/ 301
