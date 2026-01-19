@@ -1,0 +1,117 @@
+{
+    "hero": {
+        "title": "Centralized Web Analytics",
+        "subtitle": "Un script de análisis remoto centralizado, independiente del framework, que se puede reutilizar en cualquier aplicación web.",
+        "cta_start": "Empezar ahora",
+        "cta_github": "GitHub"
+    },
+    "problem": {
+        "title": "El problema que resolvemos",
+        "description": "En los entornos de desarrollo modernos, es común que una empresa mantenga múltiples aplicaciones web: landing pages, sistemas internos, productos SaaS, paneles de control, portales públicos y aplicaciones experimentales.",
+        "list_header": "Cada nuevo proyecto normalmente requiere:",
+        "items": [
+            "Reimplementar herramientas de análisis",
+            "Copiar y adaptar fragmentos de código",
+            "Configurar variables de entorno manualmente",
+            "Garantizar que el seguimiento funcione correctamente en diferentes stacks",
+            "Corregir inconsistencias entre proyectos"
+        ],
+        "consequence_header": "Con el tiempo, esto genera:",
+        "consequences": [
+            "Código duplicado",
+            "Mantenimiento fragmentado",
+            "Errores silenciosos de métricas",
+            "Alto costo operativo para algo que debería ser simple"
+        ],
+        "footer": "El resultado es un ecosistema donde el análisis deja de ser confiable, estandarizado y fácil de evolucionar."
+    },
+    "solution": {
+        "title": "La Solución",
+        "description": "Este proyecto propone un enfoque diferente: una única implementación centralizada consumida a través de CDN.",
+        "steps_header": "En lugar de implementar análisis en cada proyecto, usted:",
+        "steps": [
+            "Mantiene una única implementación",
+            "Publica el script en una CDN",
+            "Lo consume a través de <script src=\"...\">",
+            "Configura todo mediante atributos data-* y variables de entorno"
+        ],
+        "footer": "Cualquier ajuste, mejora o corrección se realiza en un solo lugar y se aplica automáticamente a todos los proyectos."
+    },
+    "use_cases": {
+        "title": "Cuándo se aplica",
+        "description": "Este proyecto es ideal cuando tiene múltiples aplicaciones web y necesita métricas estandarizadas con poco esfuerzo de mantenimiento.",
+        "scenarios_header": "Especialmente útil en escenarios como:",
+        "scenarios": [
+            "Empresas tecnológicas",
+            "Productos SaaS",
+            "Agencias con múltiples clientes",
+            "Equipos de ingeniería con múltiples repositorios",
+            "Plataformas internas que crecen con el tiempo"
+        ]
+    },
+    "audience": {
+        "title": "A quién se destina",
+        "list": [
+            "Ingenieros de software",
+            "Tech Leads",
+            "CTOs",
+            "Equipos de plataforma",
+            "Empresas que operan múltiples productos digitales"
+        ],
+        "footer": "No requiere conocimientos profundos de análisis y puede ser adoptado fácilmente por equipos que siguen las mejores prácticas de frontend y DevOps."
+    },
+    "relevance": {
+        "title": "Por qué es relevante",
+        "description": "El análisis es un componente crítico para las decisiones de producto, marketing, adquisición y monitoreo de uso. Una mala implementación genera datos inconsistentes y decisiones erróneas.",
+        "benefits_header": "Al centralizar el análisis:",
+        "benefits": [
+            "Garantiza la consistencia",
+            "Reduce el trabajo repetitivo",
+            "Aumenta la confiabilidad de los datos",
+            "Facilita la evolución futura (GDPR/LGPD, GTM, nuevos proveedores)"
+        ],
+        "footer": "Más que un script, este proyecto es una base de observabilidad frontend, preparada para crecer con sus productos."
+    },
+    "nav": {
+        "problem": "El Problema",
+        "solution": "La Solución",
+        "cases": "Casos de Uso",
+        "relevance": "Relevancia",
+        "setup": "Cómo Usar",
+        "config": "Configuración",
+        "api": "API de Tracking",
+        "security": "Seguridad"
+    },
+    "setup": {
+        "title": "Configuración Inicial",
+        "description": "Integrar Centralized Web Analytics toma solo unos segundos. Elija su plataforma a continuación para ver los detalles.",
+        "tabs": {
+            "html": "HTML Puro",
+            "nextjs": "Next.js",
+            "react": "React / Vite"
+        }
+    },
+    "configuration": {
+        "title": "Atributos Disponibles",
+        "description": "Puede personalizar el comportamiento del script directamente en la etiqueta <code>&lt;script&gt;</code> usando atributos <code>data-*</code>.",
+        "table": {
+            "attr": "Atributo",
+            "req": "Obligatorio",
+            "desc": "Descripción",
+            "values": "Valores",
+            "id_desc": "El ID de medición de su GA4 (ej., G-XXXX)",
+            "env_desc": "Define el entorno actual para la segmentación de datos.",
+            "debug_desc": "Activa registros detallados en la consola y GA4 DebugView."
+        }
+    },
+    "api": {
+        "title": "API de Seguimiento",
+        "description": "Utilice la función global <code>window.track</code> para eventos personalizados de forma segura."
+    },
+    "security": {
+        "title": "Seguridad y CSP"
+    },
+    "footer": {
+        "copy": "&copy; 2026 Syntel Analytics. Licencia MIT."
+    }
+}

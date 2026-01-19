@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- English (Default) -->
+  <url>
+    <loc>https://ga.syntel.net.br/en/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ga.syntel.net.br/en/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ga.syntel.net.br/en/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ga.syntel.net.br/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ga.syntel.net.br/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ga.syntel.net.br/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ga.syntel.net.br/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ga.syntel.net.br/it/"/>
+    <lastmod>2026-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Portuguese -->
+  <url>
+    <loc>https://ga.syntel.net.br/pt/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ga.syntel.net.br/en/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ga.syntel.net.br/en/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ga.syntel.net.br/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ga.syntel.net.br/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ga.syntel.net.br/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ga.syntel.net.br/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ga.syntel.net.br/it/"/>
+    <lastmod>2026-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Spanish -->
+  <url>
+    <loc>https://ga.syntel.net.br/es/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ga.syntel.net.br/en/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ga.syntel.net.br/en/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ga.syntel.net.br/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ga.syntel.net.br/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ga.syntel.net.br/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ga.syntel.net.br/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ga.syntel.net.br/it/"/>
+    <lastmod>2026-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- French -->
+  <url>
+    <loc>https://ga.syntel.net.br/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ga.syntel.net.br/en/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ga.syntel.net.br/en/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ga.syntel.net.br/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ga.syntel.net.br/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ga.syntel.net.br/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ga.syntel.net.br/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ga.syntel.net.br/it/"/>
+    <lastmod>2026-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- German -->
+  <url>
+    <loc>https://ga.syntel.net.br/de/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ga.syntel.net.br/en/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ga.syntel.net.br/en/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ga.syntel.net.br/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ga.syntel.net.br/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ga.syntel.net.br/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ga.syntel.net.br/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ga.syntel.net.br/it/"/>
+    <lastmod>2026-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Italian -->
+  <url>
+    <loc>https://ga.syntel.net.br/it/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ga.syntel.net.br/en/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ga.syntel.net.br/en/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ga.syntel.net.br/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ga.syntel.net.br/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ga.syntel.net.br/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ga.syntel.net.br/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ga.syntel.net.br/it/"/>
+    <lastmod>2026-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
