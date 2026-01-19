@@ -1,0 +1,93 @@
+{
+    "hero": {
+        "title": "Centralized Web Analytics",
+        "subtitle": "Um script remoto centralizado de Analytics, independente de framework, que pode ser reutilizado em qualquer aplicação web.",
+        "cta_start": "Começar Agora",
+        "cta_github": "GitHub"
+    },
+    "problem": {
+        "title": "O problema que resolvemos",
+        "description": "Em ambientes modernos de desenvolvimento, é comum que uma empresa mantenha múltiplas aplicações web: landing pages, sistemas internos, produtos SaaS, dashboards, portais públicos e aplicativos experimentais.",
+        "list_header": "Cada novo projeto normalmente exige:",
+        "items": [
+            "Reimplementar ferramentas de Analytics",
+            "Copiar e adaptar trechos de código",
+            "Configurar variáveis de ambiente manualmente",
+            "Garantir que o tracking funcione corretamente em diferentes stacks",
+            "Corrigir inconsistências entre projetos"
+        ],
+        "consequence_header": "Com o tempo, isso gera:",
+        "consequences": [
+            "Código duplicado",
+            "Manutenção fragmentada",
+            "Erros silenciosos de métricas",
+            "Alto custo operacional para algo que deveria ser simples"
+        ],
+        "footer": "O resultado é um ecossistema onde o Analytics deixa de ser confiável, padronizado e fácil de evoluir."
+    },
+    "solution": {
+        "title": "A solução",
+        "description": "Este projeto propõe uma abordagem diferente: uma única implementação centralizada consumida via CDN.",
+        "steps_header": "Em vez de implementar Analytics em cada projeto, você:",
+        "steps": [
+            "Mantém uma única implementação",
+            "Publica o script em um CDN",
+            "Consome via <script src=\"...\">",
+            "Configura tudo por atributos data-* e variáveis de ambiente"
+        ],
+        "footer": "Qualquer ajuste, melhoria ou correção é feita em um único lugar e automaticamente aplicada a todos os projetos."
+    },
+    "use_cases": {
+        "title": "Em que casos se aplica",
+        "description": "Este projeto é ideal quando você possui múltiplos aplicativos web e precisa de padronização de métricas com baixo esforço de manutenção.",
+        "scenarios_header": "Especialmente útil em cenários como:",
+        "scenarios": [
+            "Empresas de tecnologia",
+            "Produtos SaaS",
+            "Agências com vários clientes",
+            "Times de engenharia com múltiplos repositórios",
+            "Plataformas internas que crescem ao longo do tempo"
+        ]
+    },
+    "audience": {
+        "title": "A quem se destina",
+        "list": [
+            "Engenheiros de software",
+            "Tech Leads",
+            "CTOs",
+            "Times de plataforma",
+            "Empresas que operam múltiplos produtos digitais"
+        ],
+        "footer": "Não exige conhecimento profundo em Analytics e pode ser adotado facilmente por times que seguem boas práticas de frontend e DevOps."
+    },
+    "relevance": {
+        "title": "Por que isso é relevante",
+        "description": "Analytics é um componente crítico para decisão de produto, marketing, aquisição e monitoramento de uso. Quando mal implementado, gera dados inconsistentes e decisões erradas.",
+        "benefits_header": "Ao centralizar o Analytics:",
+        "benefits": [
+            "Você garante consistência",
+            "Reduz retrabalho",
+            "Aumenta confiabilidade dos dados",
+            "Facilita evolução futura (LGPD, GTM, novos providers)"
+        ],
+        "footer": "Mais do que um script, este projeto é uma fundação de observabilidade frontend, preparada para crescer junto com seus produtos."
+    },
+    "setup": {
+        "title": "Como Usar",
+        "tabs": {
+            "html": "HTML Puro",
+            "nextjs": "Next.js",
+            "react": "React / Vite"
+        }
+    },
+    "api": {
+        "title": "API de Tracking",
+        "description": "Utilize a função global <code>window.track</code> para eventos customizados de forma segura."
+    },
+    "security": {
+        "title": "Segurança e CSP"
+    },
+    "footer": {
+        "copy": "&copy; 2026 Centralized Web Analytics. Licença MIT."
+    }
+}

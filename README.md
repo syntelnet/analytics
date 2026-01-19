@@ -2,6 +2,13 @@
 
 Solução centralizada e leve para implementação do Google Analytics 4 (GA4) em qualquer site ou aplicação web.
 
+---
+
+## Repositório Oficial
+Acesse o código-fonte em: [github.com/syntelnet/analytics](https://github.com/syntelnet/analytics)
+
+---
+
 ## Visão Geral
 
 Este repositório fornece um script JavaScript standalone que simplifica a integração do GA4. Em vez de configurar o `gtag.js` manualmente em cada projeto, você carrega este script remoto que gerencia a inicialização, configuração e oferece uma API unificada para rastreamento de eventos.

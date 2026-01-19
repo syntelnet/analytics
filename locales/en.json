@@ -1,0 +1,93 @@
+{
+    "hero": {
+        "title": "Centralized Web Analytics",
+        "subtitle": "A centralized, framework-agnostic remote analytics script that can be reused in any web application.",
+        "cta_start": "Get Started",
+        "cta_github": "GitHub"
+    },
+    "problem": {
+        "title": "The problem we solve",
+        "description": "In modern development environments, companies often maintain multiple web applications: landing pages, internal systems, SaaS products, dashboards, public portals, and experimental apps.",
+        "list_header": "Each new project typically requires:",
+        "items": [
+            "Re-implementing Analytics tools",
+            "Copying and adapting code snippets",
+            "Manually configuring environment variables",
+            "Ensuring tracking works correctly across different stacks",
+            "Fixing inconsistencies between projects"
+        ],
+        "consequence_header": "Over time, this leads to:",
+        "consequences": [
+            "Duplicate code",
+            "Fragmented maintenance",
+            "Silent metric errors",
+            "High operational cost for something that should be simple"
+        ],
+        "footer": "The result is an ecosystem where Analytics ceases to be reliable, standardized, and easy to evolve."
+    },
+    "solution": {
+        "title": "The Solution",
+        "description": "This project proposes a different approach: a single centralized implementation consumed via CDN.",
+        "steps_header": "Instead of implementing Analytics in each project, you:",
+        "steps": [
+            "Maintain a single implementation",
+            "Publish the script to a CDN",
+            "Consume via <script src=\"...\">",
+            "Configure everything via data-* attributes and environment variables"
+        ],
+        "footer": "Any adjustments, improvements, or fixes are made in one place and automatically applied to all projects."
+    },
+    "use_cases": {
+        "title": "When it applies",
+        "description": "This project is ideal when you have multiple web apps and need standardized metrics with low maintenance effort.",
+        "scenarios_header": "Especially useful in scenarios such as:",
+        "scenarios": [
+            "Tech companies",
+            "SaaS products",
+            "Agencies with multiple clients",
+            "Engineering teams with multiple repositories",
+            "Internal platforms that grow over time"
+        ]
+    },
+    "audience": {
+        "title": "Who it is for",
+        "list": [
+            "Software Engineers",
+            "Tech Leads",
+            "CTOs",
+            "Platform Teams",
+            "Companies operating multiple digital products"
+        ],
+        "footer": "It doesn't require deep Analytics knowledge and can be easily adopted by teams following frontend and DevOps best practices."
+    },
+    "relevance": {
+        "title": "Why it matters",
+        "description": "Analytics is a critical component for product decisions, marketing, acquisition, and usage monitoring. Poor implementation leads to inconsistent data and wrong decisions.",
+        "benefits_header": "By centralizing Analytics:",
+        "benefits": [
+            "You ensure consistency",
+            "You reduce rework",
+            "You increase data reliability",
+            "You facilitate future evolution (GDPR/LGPD, GTM, new providers)"
+        ],
+        "footer": "More than a script, this project is a foundation of frontend observability, prepared to grow with your products."
+    },
+    "setup": {
+        "title": "How to Use",
+        "tabs": {
+            "html": "Pure HTML",
+            "nextjs": "Next.js",
+            "react": "React / Vite"
+        }
+    },
+    "api": {
+        "title": "Tracking API",
+        "description": "Use the global <code>window.track</code> function for custom events securely."
+    },
+    "security": {
+        "title": "Security and CSP"
+    },
+    "footer": {
+        "copy": "&copy; 2026 Centralized Web Analytics. MIT License."
+    }
+}
