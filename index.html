@@ -230,6 +230,7 @@
         .btn {
             display: inline-flex;
             align-items: center;
+            gap: 0.5rem;
             padding: 0.75rem 1.5rem;
             border-radius: 0.5rem;
             font-weight: 600;
@@ -508,12 +509,12 @@
                         <span id="current-flag" class="fi fi-br"></span> PT
                     </button>
                     <ul class="dropdown-menu" id="dropdown-menu">
-                        <li onclick="switchLanguage('pt')"><span class="fi fi-br"></span> Português (PT)</li>
-                        <li onclick="switchLanguage('en')"><span class="fi fi-us"></span> English (EN)</li>
-                        <li onclick="switchLanguage('es')"><span class="fi fi-es"></span> Español (ES)</li>
-                        <li onclick="switchLanguage('fr')"><span class="fi fi-fr"></span> Français (FR)</li>
-                        <li onclick="switchLanguage('de')"><span class="fi fi-de"></span> Deutsch (DE)</li>
-                        <li onclick="switchLanguage('it')"><span class="fi fi-it"></span> Italiano (IT)</li>
+                        <li onclick="switchLanguage('pt')"><span class="fi fi-br"></span> Português</li>
+                        <li onclick="switchLanguage('en')"><span class="fi fi-us"></span> English</li>
+                        <li onclick="switchLanguage('es')"><span class="fi fi-es"></span> Español</li>
+                        <li onclick="switchLanguage('fr')"><span class="fi fi-fr"></span> Français</li>
+                        <li onclick="switchLanguage('de')"><span class="fi fi-de"></span> Deutsch</li>
+                        <li onclick="switchLanguage('it')"><span class="fi fi-it"></span> Italiano</li>
                     </ul>
                 </div>
             </div>
@@ -523,8 +524,8 @@
             <h1 data-i18n="hero.title">Centralized Web Analytics</h1>
             <p class="subtitle" data-i18n="hero.subtitle"></p>
             <div class="cta-group">
-                <a href="#setup" class="btn btn-primary" data-i18n="hero.cta_start"></a>
-                <a href="https://github.com/syntelnet/analytics" class="btn btn-outline" target="_blank" data-i18n="hero.cta_github"></a>
+                <a href="#setup" class="btn btn-primary"><i data-lucide="rocket" class="icon-sm"></i> <span data-i18n="hero.cta_start"></span></a>
+                <a href="https://github.com/syntelnet/analytics" class="btn btn-outline" target="_blank"><i data-lucide="github" class="icon-sm"></i> <span data-i18n="hero.cta_github"></span></a>
             </div>
         </header>
 
