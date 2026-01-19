@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + Centralized Analytics</title>
+
+    <!-- No Vite, o script é carregado no index.html -->
+    <!-- Você pode usar variáveis injetadas pelo Vite via %VITE_VARIABLE% -->
+    <script src="/analytics.js" data-ga-id="G-XXXXXXXXXX" data-env="staging" data-debug="true" async></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Exemplo de uso dentro do código JS/React -->
+    <script>
+        // Como o script é async, podemos tentar rastrear eventos após interação
+        window.addEventListener('load', () => {
+            console.log('App carregada e analytics pronto')
+        });
+    </script>
+</body>
+
+</html>

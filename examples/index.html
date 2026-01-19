@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralized Analytics - Pure HTML Example</title>
+
+    <!-- Centralized Analytics Script -->
+    <!-- Substitua data-ga-id pelo seu ID real -->
+    <script
+        src="../analytics.js"
+        data-ga-id="G-TESTDEBUG"
+        data-env="dev"
+        data-debug="true"
+        async>
+    </script>
+</head>
+<body>
+    <h1>Exemplo de Analytics Centralizado</h1>
+    <p>Abra o console do desenvolvedor para ver os logs de debug.</p>
+
+    <button id="trackBtn">Enviar Evento de Teste</button>
+
+    <script>
+        document.getElementById('trackBtn').addEventListener('click', function() {
+            if (typeof window.track === 'function') {
+                window.track('button_click', {
+                    button_name: 'test_button',
+                    page_section: 'hero'
+                });
+                alert('Evento enviado! Verifique o console.');
+            } else {
+                console.error('Função window.track não disponível.');
+            }
+        });
+    </script>
+</body>
+</html>
