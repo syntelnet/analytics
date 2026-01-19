@@ -151,7 +151,7 @@
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
         }
 
-        .dropdown:hover .dropdown-menu {
+        .dropdown-menu.show {
             display: block;
         }
 
@@ -162,6 +162,13 @@
             cursor: pointer;
             border-radius: 0.3rem;
             transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .dropdown-menu li span {
+            font-size: 1.1rem;
         }
 
         .dropdown-menu li:hover {
@@ -473,15 +480,17 @@
         <nav class="top-bar">
             <a href="/" class="logo" id="header-logo">Syntel Analytics</a>
             <div class="lang-selector">
-                <div class="dropdown">
-                    <button class="dropdown-toggle" id="lang-display">PT</button>
-                    <ul class="dropdown-menu">
-                        <li onclick="switchLanguage('pt')">Português (PT)</li>
-                        <li onclick="switchLanguage('en')">English (EN)</li>
-                        <li onclick="switchLanguage('es')">Español (ES)</li>
-                        <li onclick="switchLanguage('fr')">Français (FR)</li>
-                        <li onclick="switchLanguage('de')">Deutsch (DE)</li>
-                        <li onclick="switchLanguage('it')">Italiano (IT)</li>
+                <div class="dropdown" id="lang-dropdown">
+                    <button class="dropdown-toggle" id="lang-display" onclick="toggleDropdown(event)">
+                        <span id="current-flag">🇧🇷</span> PT
+                    </button>
+                    <ul class="dropdown-menu" id="dropdown-menu">
+                        <li onclick="switchLanguage('pt')"><span>🇧🇷</span> Português (PT)</li>
+                        <li onclick="switchLanguage('en')"><span>🇺🇸</span> English (EN)</li>
+                        <li onclick="switchLanguage('es')"><span>🇪🇸</span> Español (ES)</li>
+                        <li onclick="switchLanguage('fr')"><span>🇫🇷</span> Français (FR)</li>
+                        <li onclick="switchLanguage('de')"><span>🇩🇪</span> Deutsch (DE)</li>
+                        <li onclick="switchLanguage('it')"><span>🇮🇹</span> Italiano (IT)</li>
                     </ul>
                 </div>
             </div>
@@ -680,6 +689,15 @@ connect-src https://www.google-analytics.com https://stats.g.doubleclick.net;</c
         let translations = {}
         const SUPPORTED_LANGS = ['pt', 'en', 'es', 'fr', 'de', 'it']
 
+        const FLAGS = {
+            'pt': '🇧🇷',
+            'en': '🇺🇸',
+            'es': '🇪🇸',
+            'fr': '🇫🇷',
+            'de': '🇩🇪',
+            'it': '🇮🇹'
+        }
+
         async function loadTranslations (lang) {
             if (!SUPPORTED_LANGS.includes(lang)) lang = 'en'
             try {
@@ -688,8 +706,8 @@ connect-src https://www.google-analytics.com https://stats.g.doubleclick.net;</c
                 translations = await response.json()
                 applyTranslations()
 
-                // Update dropdown display
-                document.getElementById('lang-display').innerText = lang.toUpperCase()
+                // Update dropdown display and flag
+                document.getElementById('lang-display').innerHTML = `<span>${ FLAGS[lang] }</span> ${ lang.toUpperCase() }`
 
                 // Save preference
                 localStorage.setItem('preferredLang', lang)
@@ -701,7 +719,28 @@ connect-src https://www.google-analytics.com https://stats.g.doubleclick.net;</c
                     const newPath = `/${ lang }/`
                     window.history.pushState({ lang }, '', newPath)
                 }
+
+                // Close dropdown after selection
+                document.getElementById('dropdown-menu').classList.remove('show')
             } catch (err) { console.error('Error loading translations:', err) }
+        }
+
+        function toggleDropdown (event) {
+            event.stopPropagation()
+            document.getElementById('dropdown-menu').classList.toggle('show')
+        }
+
+        // Close dropdown when clicking outside
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropdown-toggle') && !event.target.closest('.dropdown-toggle')) {
+                const dropdowns = document.getElementsByClassName("dropdown-menu")
+                for (let i = 0; i < dropdowns.length; i++) {
+                    const openDropdown = dropdowns[i]
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show')
+                    }
+                }
+            }
         }
 
         function applyTranslations () {
