@@ -33,11 +33,17 @@ O script detecta automaticamente seus atributos `data-*` no momento do carregame
 
 Para que o script seja "remoto", ele precisa estar disponível em uma URL pública (CDN).
 
-### 1. Vercel / Netlify / Cloudflare Pages
-- Faça o deploy deste repositório.
+### 1. Vercel / Netlify
+- Faça o deploy deste repositório vinculando sua conta.
 - O script ficará acessível em: `https://seu-dominio.com/analytics.js`
 
-### 2. AWS S3 + CloudFront
+### 2. Cloudflare Pages (Wrangler)
+Este repositório inclui um `wrangler.jsonc` configurado. Para deploy via CLI:
+```bash
+npx wrangler deploy
+```
+
+### 3. AWS S3 + CloudFront
 - Suba o arquivo `analytics.js` para um bucket S3.
 - Configure o CloudFront para servir o arquivo com cache agressivo.
 
