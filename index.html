@@ -25,6 +25,9 @@
     <!-- Prism.js for Code Highlighting -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
 
+    <!-- Flag Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" />
+
     <style>
         :root {
             --primary: #6366f1;
@@ -128,6 +131,10 @@
             gap: 0.5rem;
             min-width: 60px;
             justify-content: center;
+        }
+
+        .dropdown .fi {
+            font-size: 1.1rem;
         }
 
         .dropdown-toggle::after {
@@ -482,15 +489,15 @@
             <div class="lang-selector">
                 <div class="dropdown" id="lang-dropdown">
                     <button class="dropdown-toggle" id="lang-display" onclick="toggleDropdown(event)">
-                        <span id="current-flag">🇧🇷</span> PT
+                        <span id="current-flag" class="fi fi-br"></span> PT
                     </button>
                     <ul class="dropdown-menu" id="dropdown-menu">
-                        <li onclick="switchLanguage('pt')"><span>🇧🇷</span> Português (PT)</li>
-                        <li onclick="switchLanguage('en')"><span>🇺🇸</span> English (EN)</li>
-                        <li onclick="switchLanguage('es')"><span>🇪🇸</span> Español (ES)</li>
-                        <li onclick="switchLanguage('fr')"><span>🇫🇷</span> Français (FR)</li>
-                        <li onclick="switchLanguage('de')"><span>🇩🇪</span> Deutsch (DE)</li>
-                        <li onclick="switchLanguage('it')"><span>🇮🇹</span> Italiano (IT)</li>
+                        <li onclick="switchLanguage('pt')"><span class="fi fi-br"></span> Português (PT)</li>
+                        <li onclick="switchLanguage('en')"><span class="fi fi-us"></span> English (EN)</li>
+                        <li onclick="switchLanguage('es')"><span class="fi fi-es"></span> Español (ES)</li>
+                        <li onclick="switchLanguage('fr')"><span class="fi fi-fr"></span> Français (FR)</li>
+                        <li onclick="switchLanguage('de')"><span class="fi fi-de"></span> Deutsch (DE)</li>
+                        <li onclick="switchLanguage('it')"><span class="fi fi-it"></span> Italiano (IT)</li>
                     </ul>
                 </div>
             </div>
@@ -676,6 +683,7 @@ connect-src https://www.google-analytics.com https://stats.g.doubleclick.net;</c
         </div>
 
         <footer>
+            <p><a href="https://syntel.net.br" target="_blank" rel="noopener">syntel.net.br</a></p>
             <p data-i18n="footer.copy"></p>
         </footer>
     </div>
@@ -690,12 +698,12 @@ connect-src https://www.google-analytics.com https://stats.g.doubleclick.net;</c
         const SUPPORTED_LANGS = ['pt', 'en', 'es', 'fr', 'de', 'it']
 
         const FLAGS = {
-            'pt': '🇧🇷',
-            'en': '🇺🇸',
-            'es': '🇪🇸',
-            'fr': '🇫🇷',
-            'de': '🇩🇪',
-            'it': '🇮🇹'
+            'pt': 'br',
+            'en': 'us',
+            'es': 'es',
+            'fr': 'fr',
+            'de': 'de',
+            'it': 'it'
         }
 
         async function loadTranslations (lang) {
@@ -707,7 +715,7 @@ connect-src https://www.google-analytics.com https://stats.g.doubleclick.net;</c
                 applyTranslations()
 
                 // Update dropdown display and flag
-                document.getElementById('lang-display').innerHTML = `<span>${ FLAGS[lang] }</span> ${ lang.toUpperCase() }`
+                document.getElementById('lang-display').innerHTML = `<span class="fi fi-${ FLAGS[lang] }"></span> ${ lang.toUpperCase() }`
 
                 // Save preference
                 localStorage.setItem('preferredLang', lang)
